@@ -11,3 +11,199 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  min-height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar{
+  height: 3rem;
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0px;
+  padding: 10px 40px;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 5%),
+  0 20px 48px rgb(0 0 0 / 5%),
+  0 1px 4px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+}
+
+.navbar .auth-btn{
+  font-size: 15px;
+  padding: 10px 15px;
+  background-color: #276bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Auth-container{
+  min-height: 20rem;
+  width: 25rem;
+  margin: 0px auto;
+  padding: 0px 40px;
+  background-color: white;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 5%),
+  0 20px 48px rgb(0 0 0 / 5%),
+  0 1px 4px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+}
+
+.Auth-container h1{
+  text-align: center;
+}
+
+.Auth-container form{
+  height: calc(30rem - 150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Auth-container form input{
+  width: calc(25rem - 80px);
+  padding: 10px 20px;
+  font-size: 15px;
+  border: solid 1px #646464;
+  border-radius: 3px;
+}
+
+.Auth-container form button{
+  margin: 20px 0px;
+  padding: 10px 20px;
+  width: calc(25rem - 40px);
+  cursor: pointer;
+  background-color: #276bff;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.Auth-container form button:hover, .navbar .auth-btn:hover, .btn:hover{
+  background-color: #205de0;
+}
+
+.Auth-container p{
+  text-align: center;
+}
+
+.Auth-container p button{
+  background-color: transparent;
+  border: none;
+  color: rgb(39, 107, 255);
+  cursor: pointer;
+}
+
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  background-color: white;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 5%),
+  0 20px 48px rgb(0 0 0 / 5%),
+  0 1px 4px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #276bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.Event {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.Event.reminder {
+  border-left: 5px solid green;
+}
+
+.Event h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 95%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
